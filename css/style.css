@@ -477,9 +477,7 @@ button:focus {
     .header_area.white_menu .navbar .navbar-brand img+img {
         display: inline-block;
     }
-    .navbar-brand {
-        background : grey;
-    }
+   
 }
 
 @media (max-width: 991px) {

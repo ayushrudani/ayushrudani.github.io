@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Quizapp</title>
+    <title>Library management</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="vendors/linericon/style.css">
@@ -17,6 +17,16 @@
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css">
     <style>
+        .mail a:hover {
+            font-size: 17px !important;
+            color: black !important;
+        }
+        
+        .phone a:hover {
+            font-size: 17px !important;
+            color: black !important;
+        }
+        
         #slider {
             width: 100%;
             margin: 0 auto;
@@ -101,10 +111,11 @@
 
     <div class=" portfolio_details_area " style="margin-top:100px;">
         <div class="container">
-            <h2 class="text-uppercase">quiz app</h2>
+            <h2 class="text-uppercase">library management</h2>
 
-            <p>This is a quiz app. In which there are questions related to different programming. It also has some levels. This app is especially for college students. This app is a work in progress. This app I am single-handed.There are also dark and light
-                themes that change depending on the phone system. Many variants of the app are still under consideration. This app uses the concept of API.
+            <p>Created a library management project using Java. It has used SQL as the backend. Built on a platform called NetBeans. It has used the Swing fram.It has two types of users, one of which is the admin and the other is the user. The admin can
+                add books, delete books, and issue books. And the user can only issue books.
+
             </p>
         </div>
     </div>
@@ -115,7 +126,11 @@
                 <div class="row">
                     <!-- <div class="col-lg-6" style="margin:auto;"> -->
                     <div class="left_img" style="margin:auto;">
+
                         <div id="slider">
+                            <div class="slide">
+                                <img src="./img/portfolio/p3.jpg">
+                            </div>
                             <div class="slide">
                                 <img src="./library/1.png">
                             </div>
@@ -154,25 +169,23 @@
                     <div class="portfolio_right_text mt-30">
                         <h4 class="text-uppercase">Main page</h4>
                         <p>
-                            Main page which contains profiles and different types of programming quiz topics.
+                            The main page is the first page of the project. It has a many buttons like Book Details, Publisher, Member, Issue Book, Return Book, Author, Category and Logout.
                         </p>
-                        <h4 class="text-uppercase">Setting page</h4>
+                        <h4 class="text-uppercase">Book Details</h4>
                         <p>
-                            The Settings page provides various options like editing profiles, updating account details, deleting accounts, and resetting everything.
+                            Book Details page where you can add books, delete books, and update books. It has a search bar where you can search for books by book name, author name, publisher name, and category name. It also shows the total number of books in it.
                         </p>
                         <h4 class="text-uppercase">Level page</h4>
                         <p>There are different types of levels on the level page and you can solve the questions of that level by solving them.
                         </p>
-                        <h4 class="text-uppercase">Quiz page</h4>
+                        <h4 class="text-uppercase">Publisher</h4>
                         <p>
-                            Quiz page where you have to select options and skip button where you can also skip. It has 60 seconds for the user to answer a question. If the team completes, the automatic question skips to the next question . It also shows the total number of queries
-                            in it.
+                            The publisher page shows the publisher's name and detail of the publisher. And there is a button to add a publisher. Category and Author smillar to publisher.
                         </p>
-                        <h4 class="text-uppercase">Result page</h4>
-                        <p>The result page shows the user the number of correct, incorrect, and skipped questions. And there also shows marks and stars based on that. And there are also buttons like Home, Share, Answer, and Next.
+                        <h4 class="text-uppercase">IssueBook and ReturnBook</h4>
+                        <p>
+                            The IssueBook page shows the details of the book issued by the user. And the ReturnBook page shows the details of the book returned by the user.
                         </p>
-                        <h4 class="text-uppercase">Answer page</h4>
-                        <p>The answer page shows all the details of the answer you attempted and the correct answer to all the questions.</p>
                     </div>
 
                 </div>
@@ -190,7 +203,16 @@
                         <div class="footer_logo">
                             <a href="#">
                                 <h1>Ayush Rudani</h1>
-                                <p>ayushrudani09@gmail.com</p>
+                                <div class="mail">
+                                    <i class="fa fa-envelope" aria-hidden="true" style="color
+                            :grey; margin-right: 4px;"></i><a href="mailto:ayushrudani09@gmail.com" style="color
+                            :grey;"> ayushrudani09@gmail.com</a>
+                                </div>
+                                <div class="phone">
+                                    <i class="fa fa-phone" aria-hidden="true" style="color
+                            :grey; margin-right: 4px;"></i><a href="" style="color
+                            :grey;"> +91 9499717749</a>
+                                </div>
                             </a>
                             <h4>Follow Me</h4>
                         </div>

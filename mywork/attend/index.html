@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .show {
+            width: 100%;
+            font-size: 60px;
+            text-align: center;
+            color: green;
+            margin-top: 50px;
+        }
+        
+        .display {
+            width: 80%;
+            margin: auto;
+            font-size: 25px;
+            color: red;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="show" id="show">
+        101
+    </div>
+    <div class="display" id="display">
+
+    </div>
+    <script>
+        var rollno = 101;
+        synth = window.speechSynthesis
+        document.onkeydown = function(event) {
+            switch (event.key) {
+                case '1':
+                    rollno++;
+                    document.getElementById('show').innerHTML = rollno;
+                    utterThis = new SpeechSynthesisUtterance(rollno);
+                    synth.speak(utterThis);
+                    break;
+                case '2':
+                    document.getElementById("display").innerHTML += rollno + ",";
+                    rollno++;
+                    document.getElementById('show').innerHTML = rollno;
+                    utterThis = new SpeechSynthesisUtterance(rollno);
+                    synth.speak(utterThis);
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Quizapp</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="vendors/linericon/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #slider {
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .slide {
+            width: 100%;
+            display: flex;
+            animation-name: fade;
+            animation-duration: 1s;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .slide img {
+            width: 100%;
+            position: relative;
+            align-self: center;
+            height: 600px;
+        }
+        
+        @keyframes fade {
+            from {
+                opacity: 0.5;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .controls {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5em;
+            padding: 15px 10px;
+            border-radius: 5px;
+        }
+        
+        .controls:hover {
+            cursor: pointer;
+        }
+        
+        .controls:active {
+            color: grey;
+        }
+        
+        #left-arrow {
+            left: 10px;
+        }
+        
+        #right-arrow {
+            right: 10px;
+        }
+        
+        @media (max-width:576px) {
+            #slider {
+                width: 100%;
+            }
+            .controls {
+                font-size: 1em;
+            }
+            #dots-con {
+                display: none;
+            }
+        }
+        
+        .left_img {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .left_img img {
+            height: 600px !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class=" portfolio_details_area " style="margin-top:100px;">
+        <div class="container">
+            <h2 class="text-uppercase">quiz app</h2>
+
+            <p>This is a quiz app. In which there are questions related to different programming. It also has some levels. This app is especially for college students. This app is a work in progress. This app I am single-handed.There are also dark and light
+                themes that change depending on the phone system. Many variants of the app are still under consideration. This app uses the concept of API.
+            </p>
+        </div>
+    </div>
+    <!--================Start Portfolio Details Area =================-->
+    <section class="portfolio_details_area section_gap">
+        <div class="container">
+            <div class="portfolio_details_inner">
+                <div class="row">
+                    <!-- <div class="col-lg-6" style="margin:auto;"> -->
+                    <div class="left_img" style="margin:auto;">
+                        <div id="slider">
+                            <div class="slide">
+                                <img src="./library/1.png">
+                            </div>
+                            <div class="slide">
+                                <img src="./library/2.png">
+                            </div>
+                            <div class="slide">
+                                <img src="./library/3.png">
+                            </div>
+                            <div class="slide">
+                                <img src="./library/4.png">
+                            </div>
+                            <div class="slide">
+                                <img src="./library/5.png">
+                            </div>
+                            <div class="slide">
+                                <img src="./library/6.png">
+                            </div>
+                            <div class="slide">
+                                <img src="./library/7.png">
+                            </div>
+                            <!--Controlling arrows-->
+                            <span class="controls" onclick="prevSlide(-1)" id="left-arrow"><i class="fa fa-chevron-left" aria-hidden="true"></i>
+  </span>
+                            <span class="controls" id="right-arrow" onclick="nextSlide(1)"><i class="fa fa-chevron-right" aria-hidden="true"></i>
+  </span>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <div class="row">
+                    <!-- <div class="offset-lg-1 col-lg-5"> -->
+                    <div class="portfolio_right_text mt-30">
+                        <h4 class="text-uppercase">Main page</h4>
+                        <p>
+                            Main page which contains profiles and different types of programming quiz topics.
+                        </p>
+                        <h4 class="text-uppercase">Setting page</h4>
+                        <p>
+                            The Settings page provides various options like editing profiles, updating account details, deleting accounts, and resetting everything.
+                        </p>
+                        <h4 class="text-uppercase">Level page</h4>
+                        <p>There are different types of levels on the level page and you can solve the questions of that level by solving them.
+                        </p>
+                        <h4 class="text-uppercase">Quiz page</h4>
+                        <p>
+                            Quiz page where you have to select options and skip button where you can also skip. It has 60 seconds for the user to answer a question. If the team completes, the automatic question skips to the next question . It also shows the total number of queries
+                            in it.
+                        </p>
+                        <h4 class="text-uppercase">Result page</h4>
+                        <p>The result page shows the user the number of correct, incorrect, and skipped questions. And there also shows marks and stars based on that. And there are also buttons like Home, Share, Answer, and Next.
+                        </p>
+                        <h4 class="text-uppercase">Answer page</h4>
+                        <p>The answer page shows all the details of the answer you attempted and the correct answer to all the questions.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================End Portfolio Details Area =================-->
+
+    <!--================Footer Area =================-->
+    <footer class="footer_area" id="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="footer_top flex-column">
+                        <div class="footer_logo">
+                            <a href="#">
+                                <h1>Ayush Rudani</h1>
+                                <p>ayushrudani09@gmail.com</p>
+                            </a>
+                            <h4>Follow Me</h4>
+                        </div>
+                        <div class="footer_social">
+                            <a href="https://www.instagram.com/ayush_ruds/"><i class="fa fa-instagram"></i></a>
+                            <a href="https://github.com/ayushrudani"><i class="fa fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/aayush-rudani-b2a741243/"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!--================End Footer Area =================-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+        var slides = document.querySelectorAll(".slide");
+
+        var index = 0;
+
+
+        function prevSlide(n) {
+            index += n;
+            console.log("prevSlide is called");
+            changeSlide();
+        }
+
+        function nextSlide(n) {
+            index += n;
+            changeSlide();
+        }
+
+        changeSlide();
+
+        function changeSlide() {
+
+            if (index > slides.length - 1)
+                index = 0;
+
+            if (index < 0)
+                index = slides.length - 1;
+
+
+
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+
+
+
+
+            }
+
+            slides[index].style.display = "flex";
+
+
+
+
+        }
+    </script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/isotope/isotope-min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <!--gmaps Js-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="js/gmaps.min.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+
+</html>
